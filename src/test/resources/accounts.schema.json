@@ -4,7 +4,7 @@
   "default": [],
   "items": {
     "type": "object",
-    "additionalProperties": true,
+    "additionalProperties": false,
     "required": [
       "id",
       "name",
@@ -28,14 +28,12 @@
         "type": "integer",
         "default": 0
       },
-      "properties": {
         "currency": {
-          "description": "name of currency",
+          "type":"string",
           "enum": [
             "RUB",
             "USD"
           ]
-        }
       }
     }
   }
